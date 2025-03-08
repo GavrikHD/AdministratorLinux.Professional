@@ -1,16 +1,16 @@
 # Обновление ядра
 
-Проверка текущей версии ядра
+Проверяем текущую версии ядра
 ```htm
 uname -r
 ```
 >6.8.0-54-generic
 
-Просмотр репозитория https://kernel.ubuntu.com/mainline на наличие новых версий ядра 
+Просмотриваем репозиторий https://kernel.ubuntu.com/mainline на наличие новых версий ядра 
 
 Последняя версия 6.13.5:  https://kernel.ubuntu.com/mainline/v6.13.5/
 
-Создаем папку куда будем скачивать новое ядро
+Создаем папку куда будем скачивать новое ядро, заходим в эту папку
 ```htm
 mkdir kernel && cd kernel
 ```
@@ -57,7 +57,7 @@ lrwxrwxrwx  1 root root       29 Mar  8 09:26 vmlinuz -> vmlinuz-6.13.5-061305-g
 -rw-------  1 root root 14985608 Feb  7 22:01 vmlinuz-6.8.0-54-generic  
 lrwxrwxrwx  1 root root       24 Mar  4 11:19 vmlinuz.old -> vmlinuz-6.8.0-54-generic  
 
-Обновить конфигурацию загрузчика:
+Обновляем конфигурацию загрузчика:
 ```htm
 sudo update-grub
 ```
@@ -73,7 +73,7 @@ Check GRUB_DISABLE_OS_PROBER documentation entry.
 Adding boot menu entry for UEFI Firmware Settings ...  
 done  
 
-Выбрать загрузку нового ядра по-умолчанию:
+Выбираем загрузку нового ядра по-умолчанию:
 ```htm
 sudo grub-set-default 0
 ```
