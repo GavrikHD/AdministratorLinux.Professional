@@ -118,26 +118,24 @@ mkdir -p /raid/part{1,2,3,4,5}
 ```htm
 for i in $(seq 1 5); do mount /dev/md0p$i /raid/part$i; done
 ```
-Создадим в каждом разделе по файлу для проерки сохраности файлов
+Создадим в каждом разделе по файлу для проверки сохраности файлов
 ```htm
 for i in $(seq 1 5); do touch /raid/part$i/test.txt
 ```
 # Сломать и починить RAID
 Попробуем пометить один из дисков как fail 
 ```htm
-mdadm /dev/md0 --fail /dev/sdc
+mdadm /dev/md0 --fail /dev/sdb
 ```
->mdadm: set /dev/sdc faulty in /dev/md0
+>mdadm: set /dev/sdb faulty in /dev/md0
 
 проверим состояние райда
 ```htm
 cat /proc/mdstat
 ```
 <pre>Personalities : [linear] [raid0] [raid1] [raid6] [raid5] [raid4] [raid10] 
-md0 : active raid10 sde[3] sdd[2] sdc[1](F) sdb[0]
-      2093056 blocks super 1.2 512K chunks 2 near-copies [4/3] [U_UU]
-      
-unused devices: &lt;none&gt;
+md0 : active raid10 sdf[3] sde[2] sdd[1] sdb[0](F)
+      2093056 blocks super 1.2 512K chunks 2 near-copies [4/3] [_UUU]
 </pre>
 
 ```htm
@@ -145,7 +143,7 @@ mdadm -D /dev/md0
 ```
 <pre>/dev/md0:
            Version : 1.2
-     Creation Time : Wed Mar 12 09:25:40 2025
+     Creation Time : Wed Mar 12 15:23:24 2025
         Raid Level : raid10
         Array Size : 2093056 (2044.00 MiB 2143.29 MB)
      Used Dev Size : 1046528 (1022.00 MiB 1071.64 MB)
@@ -153,7 +151,7 @@ mdadm -D /dev/md0
      Total Devices : 4
        Persistence : Superblock is persistent
 
-       Update Time : Wed Mar 12 14:01:42 2025
+       Update Time : Thu Mar 13 12:10:38 2025
              State : clean, degraded 
     Active Devices : 3
    Working Devices : 3
@@ -166,69 +164,69 @@ mdadm -D /dev/md0
 Consistency Policy : resync
 
               Name : u24:0  (local to host u24)
-              UUID : fefa8612:102c3c57:c8791931:2830b571
+              UUID : 38eb9f5b:8f762859:40c39243:a39b51ed
             Events : 19
 
     Number   Major   Minor   RaidDevice State
-       0       8       16        0      active sync set-A   /dev/sdb
-       -       0        0        1      removed
-       2       8       48        2      active sync set-A   /dev/sdd
-       3       8       64        3      active sync set-B   /dev/sde
+       -       0        0        0      removed
+       1       8       48        1      active sync set-B   /dev/sdd
+       2       8       64        2      active sync set-A   /dev/sde
+       3       8       80        3      active sync set-B   /dev/sdf
 
-       1       8       32        -      faulty   /dev/sdc
+       0       8       16        -      faulty   /dev/sdb
 </pre>
 
-Пробуем удалить "плохой" диск из массива:
+Удаляем "плохой" диск из массива:
 ```htm
-mdadm /dev/md0 --remove /dev/sdс
+mdadm /dev/md0 --remove /dev/sdb
 ```
-но получаем ошибку
-```htm
-mdadm: stat failed for /dev/sdс: No such file or directory
-```
+>mdadm: hot removed /dev/sdb from /dev/md0
+
 Добовляем новый диск в райд
 ```htm
-mdadm /dev/md0 --add /dev/sdf
+mdadm /dev/md0 --add /dev/sdc
 ```
 >mdadm: added /dev/sdf
 
-райд собрался, но диск остался в райд. Для того что бы его убрать, сначала размотируем фс
-```htm
-for i in $(seq 1 5); do umount /raid/part$i; done
-```
-потом останавливаем райд
-```htm
-mdadm --stop /dev/md0
-```
->mdadm: stopped /dev/md0
+Проверяем результат
 
-```htm
-mdadm --zero-superblock --force /dev/sdc
-```
->mdadm: Unrecognised md component device - /dev/sdc
+<pre>/dev/md0:
+           Version : 1.2
+     Creation Time : Wed Mar 12 15:23:24 2025
+        Raid Level : raid10
+        Array Size : 2093056 (2044.00 MiB 2143.29 MB)
+     Used Dev Size : 1046528 (1022.00 MiB 1071.64 MB)
+      Raid Devices : 4
+     Total Devices : 4
+       Persistence : Superblock is persistent
 
-Заново создем райд10, только уже с другим диском
-```htm
-mdadm --create --verbose /dev/md0 -l 10 -n 4 /dev/sd{b,d,e,f}
-```
-<pre>mdadm: layout defaults to n2
-mdadm: layout defaults to n2
-mdadm: chunk size defaults to 512K
-mdadm: /dev/sdb appears to be part of a raid array:
-       level=raid10 devices=4 ctime=Wed Mar 12 09:25:40 2025
-mdadm: /dev/sdd appears to be part of a raid array:
-       level=raid10 devices=4 ctime=Wed Mar 12 09:25:40 2025
-mdadm: /dev/sde appears to be part of a raid array:
-       level=raid10 devices=4 ctime=Wed Mar 12 09:25:40 2025
-mdadm: /dev/sdf appears to be part of a raid array:
-       level=raid10 devices=4 ctime=Wed Mar 12 09:25:40 2025
-mdadm: size set to 1046528K
-Continue creating array? yes
-mdadm: Defaulting to version 1.2 metadata
-mdadm: array /dev/md0 started.
+       Update Time : Thu Mar 13 12:23:28 2025
+             State : clean 
+    Active Devices : 4
+   Working Devices : 4
+    Failed Devices : 0
+     Spare Devices : 0
+
+            Layout : near=2
+        Chunk Size : 512K
+
+Consistency Policy : resync
+
+              Name : u24:0  (local to host u24)
+              UUID : 38eb9f5b:8f762859:40c39243:a39b51ed
+            Events : 39
+
+    Number   Major   Minor   RaidDevice State
+       4       8       32        0      active sync set-A   /dev/sdc
+       1       8       48        1      active sync set-B   /dev/sdd
+       2       8       64        2      active sync set-A   /dev/sde
+       3       8       80        3      active sync set-B   /dev/sdf
 </pre>
-Монтируем обратно фс
+
+Проверяем, сохранились ли файлы на созданных и примонтированных фс
 ```htm
-for i in $(seq 1 5); do mount /dev/md0p$i /raid/part$i; done
+ls /raid/part1/
 ```
-проверяем наши файлы
+>lost+found  test.txt
+
+файл на месте
