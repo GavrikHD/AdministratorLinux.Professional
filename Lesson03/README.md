@@ -137,7 +137,5 @@ Writing superblocks and filesystem accounting information: done
 <span style="color:#C01C28"><b>PV Name</b></span>               /dev/sdc   </pre>
 И место в VG прибавилось
 >vgs
-<pre>VG        #PV #LV #SN Attr   VSize  VFree 
-  ubuntu-vg   1   1   0 wz--n- &lt;9.45g     0 
-  vg01        2   2   0 wz--n- 11.99g &lt;3.85g</pre>
+
 
