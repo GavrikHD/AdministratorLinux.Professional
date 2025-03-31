@@ -171,17 +171,7 @@ nginx: configuration file /etc/nginx/nginx.conf test is successful
 
 Смотрим с помощью curl:
 
- curl -a http://localhost/repo/
-
- <html>
-<head><title>403 Forbidden</title></head>
-<body>
-<center><h1>403 Forbidden</h1></center>
-<hr><center>nginx/1.20.1</center>
-</body>
-</html>
-[root@localhost x86_64]# nginx -s reload
-[root@localhost x86_64]#  curl -a http://localhost/repo/
+>curl -a http://localhost/repo/
 <html>
 <head><title>Index of /repo/</title></head>
 <body>
