@@ -29,3 +29,7 @@
 2025-03-31 15:21:12.248 [info] Removed views:workbench.debug.breakPointsView,workbench.debug.callStackView,workbench.debug.watchExpressionsView,workbench.debug.variablesView from workbench.view.debug
 2025-03-31 15:21:12.249 [info] Added views:workbench.debug.welcome in workbench.view.debug
 2025-03-31 15:21:41.451 [info] Added views:workbench.scm.history in workbench.view.scm
+2025-03-31 15:23:44.250 [info] Added views:workbench.views.extensions.installed,workbench.views.extensions.popular,extensions.recommendedList in workbench.view.extensions
+2025-03-31 15:23:44.252 [info] Removed views:workbench.views.extensions.popular from workbench.view.extensions
+2025-03-31 15:23:44.372 [info] Added views:workbench.views.extensions.popular in workbench.view.extensions
+2025-03-31 15:27:41.896 [info] Removed views:workbench.scm.history from workbench.view.scm
