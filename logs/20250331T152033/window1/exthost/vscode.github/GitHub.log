@@ -1,0 +1,4 @@
+2025-03-31 15:20:35.238 [info] Log level: Info
+2025-03-31 15:21:12.360 [info] Log level: Info
+2025-03-31 15:21:41.649 [warning] [GitHubSourceControlHistoryItemDetailsProvider][_loadAssignableUsers] Failed to load assignable user(s) for GavrikHD/AdministratorLinux.Professional: Error: No GitHub authentication session available.
+2025-03-31 15:21:41.649 [warning] [GitHubBranchProtectionProvider][updateRepositoryBranchProtection] Failed to update repository branch protection: No GitHub authentication session available.

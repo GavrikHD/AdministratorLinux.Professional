@@ -1,0 +1,174 @@
+2025-03-31 15:20:35.238 [info] [main] Log level: Info
+2025-03-31 15:20:35.238 [info] [main] Validating found git in: "git"
+2025-03-31 15:20:35.238 [info] [main] Using git "2.39.5" from "git"
+2025-03-31 15:20:35.238 [info] [Model][doInitialScan] Initial repository scan started
+2025-03-31 15:20:35.238 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-03-31 15:21:18.390 [info] [main] Log level: Info
+2025-03-31 15:21:18.390 [info] [main] Validating found git in: "git"
+2025-03-31 15:21:18.390 [info] [main] Using git "2.39.5" from "git"
+2025-03-31 15:21:18.390 [info] [Model][doInitialScan] Initial repository scan started
+2025-03-31 15:21:18.390 [info] > git rev-parse --show-toplevel [5ms]
+2025-03-31 15:21:18.390 [info] fatal: detected dubious ownership in repository at '/home/roman/AdministratorLinux.Professional'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/roman/AdministratorLinux.Professional
+2025-03-31 15:21:18.402 [info] > git rev-parse --show-toplevel [1ms]
+2025-03-31 15:21:18.402 [info] fatal: detected dubious ownership in repository at '/home/roman/AdministratorLinux.Professional'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/roman/AdministratorLinux.Professional
+2025-03-31 15:21:18.410 [info] > git rev-parse --show-toplevel [2ms]
+2025-03-31 15:21:18.410 [info] fatal: detected dubious ownership in repository at '/home/roman/AdministratorLinux.Professional'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/roman/AdministratorLinux.Professional
+2025-03-31 15:21:18.417 [info] > git rev-parse --show-toplevel [2ms]
+2025-03-31 15:21:18.417 [info] fatal: detected dubious ownership in repository at '/home/roman/AdministratorLinux.Professional'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/roman/AdministratorLinux.Professional
+2025-03-31 15:21:18.425 [info] > git rev-parse --show-toplevel [2ms]
+2025-03-31 15:21:18.425 [info] fatal: detected dubious ownership in repository at '/home/roman/AdministratorLinux.Professional'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/roman/AdministratorLinux.Professional
+2025-03-31 15:21:18.430 [info] > git rev-parse --show-toplevel [1ms]
+2025-03-31 15:21:18.431 [info] fatal: detected dubious ownership in repository at '/home/roman/AdministratorLinux.Professional'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/roman/AdministratorLinux.Professional
+2025-03-31 15:21:18.436 [info] > git rev-parse --show-toplevel [1ms]
+2025-03-31 15:21:18.436 [info] fatal: detected dubious ownership in repository at '/home/roman/AdministratorLinux.Professional'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/roman/AdministratorLinux.Professional
+2025-03-31 15:21:18.441 [info] > git rev-parse --show-toplevel [1ms]
+2025-03-31 15:21:18.441 [info] fatal: detected dubious ownership in repository at '/home/roman/AdministratorLinux.Professional'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/roman/AdministratorLinux.Professional
+2025-03-31 15:21:18.446 [info] > git rev-parse --show-toplevel [1ms]
+2025-03-31 15:21:18.446 [info] fatal: detected dubious ownership in repository at '/home/roman/AdministratorLinux.Professional'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/roman/AdministratorLinux.Professional
+2025-03-31 15:21:18.453 [info] > git rev-parse --show-toplevel [0ms]
+2025-03-31 15:21:18.453 [info] fatal: detected dubious ownership in repository at '/home/roman/AdministratorLinux.Professional'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/roman/AdministratorLinux.Professional
+2025-03-31 15:21:18.458 [info] > git rev-parse --show-toplevel [1ms]
+2025-03-31 15:21:18.458 [info] fatal: detected dubious ownership in repository at '/home/roman/AdministratorLinux.Professional'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/roman/AdministratorLinux.Professional
+2025-03-31 15:21:18.463 [info] > git rev-parse --show-toplevel [1ms]
+2025-03-31 15:21:18.463 [info] fatal: detected dubious ownership in repository at '/home/roman/AdministratorLinux.Professional'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/roman/AdministratorLinux.Professional
+2025-03-31 15:21:18.468 [info] > git rev-parse --show-toplevel [1ms]
+2025-03-31 15:21:18.468 [info] fatal: detected dubious ownership in repository at '/home/roman/AdministratorLinux.Professional'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/roman/AdministratorLinux.Professional
+2025-03-31 15:21:18.472 [info] > git rev-parse --show-toplevel [0ms]
+2025-03-31 15:21:18.472 [info] fatal: detected dubious ownership in repository at '/home/roman/AdministratorLinux.Professional'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/roman/AdministratorLinux.Professional
+2025-03-31 15:21:18.478 [info] > git rev-parse --show-toplevel [0ms]
+2025-03-31 15:21:18.478 [info] fatal: detected dubious ownership in repository at '/home/roman/AdministratorLinux.Professional'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/roman/AdministratorLinux.Professional
+2025-03-31 15:21:18.485 [info] > git rev-parse --show-toplevel [3ms]
+2025-03-31 15:21:18.486 [info] fatal: detected dubious ownership in repository at '/home/roman/AdministratorLinux.Professional'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/roman/AdministratorLinux.Professional
+2025-03-31 15:21:18.490 [info] > git rev-parse --show-toplevel [1ms]
+2025-03-31 15:21:18.490 [info] fatal: detected dubious ownership in repository at '/home/roman/AdministratorLinux.Professional'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/roman/AdministratorLinux.Professional
+2025-03-31 15:21:18.495 [info] > git rev-parse --show-toplevel [1ms]
+2025-03-31 15:21:18.495 [info] fatal: detected dubious ownership in repository at '/home/roman/AdministratorLinux.Professional'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/roman/AdministratorLinux.Professional
+2025-03-31 15:21:18.500 [info] > git rev-parse --show-toplevel [1ms]
+2025-03-31 15:21:18.500 [info] fatal: detected dubious ownership in repository at '/home/roman/AdministratorLinux.Professional'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/roman/AdministratorLinux.Professional
+2025-03-31 15:21:18.505 [info] > git rev-parse --show-toplevel [1ms]
+2025-03-31 15:21:18.505 [info] fatal: detected dubious ownership in repository at '/home/roman/AdministratorLinux.Professional'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/roman/AdministratorLinux.Professional
+2025-03-31 15:21:18.512 [info] > git rev-parse --show-toplevel [2ms]
+2025-03-31 15:21:18.512 [info] fatal: detected dubious ownership in repository at '/home/roman/AdministratorLinux.Professional'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/roman/AdministratorLinux.Professional
+2025-03-31 15:21:18.518 [info] > git rev-parse --show-toplevel [1ms]
+2025-03-31 15:21:18.518 [info] fatal: detected dubious ownership in repository at '/home/roman/AdministratorLinux.Professional'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/roman/AdministratorLinux.Professional
+2025-03-31 15:21:18.525 [info] > git rev-parse --show-toplevel [0ms]
+2025-03-31 15:21:18.525 [info] fatal: detected dubious ownership in repository at '/home/roman/AdministratorLinux.Professional'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/roman/AdministratorLinux.Professional
+2025-03-31 15:21:18.530 [info] > git rev-parse --show-toplevel [0ms]
+2025-03-31 15:21:18.530 [info] fatal: detected dubious ownership in repository at '/home/roman/AdministratorLinux.Professional'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/roman/AdministratorLinux.Professional
+2025-03-31 15:21:18.534 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (1)
+2025-03-31 15:21:41.381 [info] > git config --global --add safe.directory /home/roman/AdministratorLinux.Professional [1ms]
+2025-03-31 15:21:41.389 [info] > git rev-parse --show-toplevel [2ms]
+2025-03-31 15:21:41.398 [info] > git rev-parse --git-dir --git-common-dir [1ms]
+2025-03-31 15:21:41.415 [info] [Model][openRepository] Opened repository: /home/roman/AdministratorLinux.Professional
+2025-03-31 15:21:41.425 [info] > git config --get commit.template [2ms]
+2025-03-31 15:21:41.435 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-03-31 15:21:41.449 [info] > git status -z -uall [7ms]
+2025-03-31 15:21:41.450 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2025-03-31 15:21:41.472 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [8ms]
+2025-03-31 15:21:41.477 [info] > git config --get commit.template [6ms]
+2025-03-31 15:21:41.482 [info] > git config --get --local branch.main.vscode-merge-base [5ms]
+2025-03-31 15:21:41.486 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [5ms]
+2025-03-31 15:21:41.487 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/LAP/main refs/remotes/LAP/main [1ms]
+2025-03-31 15:21:41.493 [info] > git merge-base refs/heads/main refs/remotes/LAP/main [1ms]
+2025-03-31 15:21:41.503 [info] > git diff --name-status -z --diff-filter=ADMR 8556ca9744031364326ea0a4603a2fd158305d86...refs/remotes/LAP/main [6ms]
+2025-03-31 15:21:41.529 [info] > git status -z -uall [7ms]
+2025-03-31 15:21:41.529 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2025-03-31 15:21:41.569 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full --stdin [6ms]
+2025-03-31 15:21:42.102 [info] > git check-ignore -v -z --stdin [1ms]
+2025-03-31 15:21:42.899 [info] > git config --get commit.template [5ms]
+2025-03-31 15:21:42.900 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-03-31 15:21:42.913 [info] > git status -z -uall [5ms]
+2025-03-31 15:21:42.915 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-03-31 15:21:47.933 [info] > git config --get commit.template [7ms]
+2025-03-31 15:21:47.934 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-03-31 15:21:47.942 [info] > git status -z -uall [4ms]
+2025-03-31 15:21:47.943 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [1ms]
+2025-03-31 15:21:55.658 [info] > git diff-tree -r --name-status -z --diff-filter=ADMR --find-renames=50% 178da763b67563e43e09642aca9980b2d462ad1d 2943aa4d4569823133e99197ad5f97de5e9a4fb2 [1ms]
+2025-03-31 15:21:55.688 [info] > git show --textconv 2943aa4d4569823133e99197ad5f97de5e9a4fb2:Lesson08/README.md [8ms]
+2025-03-31 15:21:55.690 [info] > git ls-tree -l 2943aa4d4569823133e99197ad5f97de5e9a4fb2 -- Lesson08/README.md [2ms]
+2025-03-31 15:21:56.198 [info] > git check-ignore -v -z --stdin [3ms]
+2025-03-31 15:21:57.335 [info] > git config --get commit.template [1ms]
+2025-03-31 15:21:57.340 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-03-31 15:21:57.353 [info] > git status -z -uall [8ms]
+2025-03-31 15:21:57.357 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2025-03-31 15:22:12.750 [info] > git config --get commit.template [6ms]
+2025-03-31 15:22:12.751 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-03-31 15:22:12.764 [info] > git status -z -uall [8ms]
+2025-03-31 15:22:12.767 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2025-03-31 15:22:17.795 [info] > git config --get commit.template [9ms]
+2025-03-31 15:22:17.796 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-03-31 15:22:17.805 [info] > git status -z -uall [4ms]
+2025-03-31 15:22:17.805 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [1ms]
+2025-03-31 15:22:26.879 [info] > git ls-tree -l 2943aa4d4569823133e99197ad5f97de5e9a4fb2 -- Lesson08/README.md [2ms]
