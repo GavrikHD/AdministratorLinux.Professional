@@ -68,12 +68,12 @@ nano /etc/systemd/system/watchlog.timer
 Description=Run watchlog script every 30 second
 
 [Timer]
-# Run every 30 second
-OnUnitActiveSec=30
+OnCalendar=*:*:0/30
 Unit=watchlog.service
+AccuracySec=1s
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=timers.target
 </pre>
 
 Запустим timer:
@@ -84,10 +84,12 @@ WantedBy=multi-user.target
 
 >tail -n 1000 /var/log/syslog  | grep word
 
-<pre>2025-04-03T17:33:06.843034+00:00 u24 systemd[1]: Started systemd-ask-pass<span style="color:#C01C28"><b>word</b></span>-console.path - Dispatch Pass<span style="color:#C01C28"><b>word</b></span> Requests to Console Directory Watch.
-2025-04-03T17:33:06.843037+00:00 u24 systemd[1]: systemd-ask-pass<span style="color:#C01C28"><b>word</b></span>-plymouth.path - Forward Pass<span style="color:#C01C28"><b>word</b></span> Requests to Plymouth Directory Watch was skipped because of an unmet condition check (ConditionPathExists=/run/plymouth/pid).
-2025-04-03T17:33:06.846770+00:00 u24 kernel: systemd[1]: Started systemd-ask-pass<span style="color:#C01C28"><b>word</b></span>-wall.path - Forward Pass<span style="color:#C01C28"><b>word</b></span> Requests to Wall Directory Watch.
-2025-04-03T17:33:06.846847+00:00 u24 kernel: audit: type=1400 audit(1743701585.879:2): apparmor=&quot;STATUS&quot; operation=&quot;profile_load&quot; profile=&quot;unconfined&quot; name=&quot;1pass<span style="color:#C01C28"><b>word</b></span>&quot; pid=473 comm=&quot;apparmor_parser&quot;
+<pre>2025-04-15T14:46:02.794524+00:00 u24 root: Tue Apr 15 14:46:02 UTC 2025: I found <span style="color:#C01C28"><b>word</b></span>, Master!
+2025-04-15T14:46:30.693034+00:00 u24 root: Tue Apr 15 14:46:30 UTC 2025: I found <span style="color:#C01C28"><b>word</b></span>, Master!
+2025-04-15T14:47:00.693508+00:00 u24 root: Tue Apr 15 14:47:00 UTC 2025: I found <span style="color:#C01C28"><b>word</b></span>, Master!
+2025-04-15T14:47:30.697223+00:00 u24 root: Tue Apr 15 14:47:30 UTC 2025: I found <span style="color:#C01C28"><b>word</b></span>, Master!
+2025-04-15T14:48:00.699549+00:00 u24 root: Tue Apr 15 14:48:00 UTC 2025: I found <span style="color:#C01C28"><b>word</b></span>, Master!
+2025-04-15T14:48:30.698432+00:00 u24 root: Tue Apr 15 14:48:30 UTC 2025: I found <span style="color:#C01C28"><b>word</b></span>, Master!
 </pre>
 
 # Установить spawn-fcgi и создать unit-файл (spawn-fcgi.sevice) с помощью переделки init-скрипта
